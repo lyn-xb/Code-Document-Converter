@@ -3,7 +3,6 @@ package indi.lyn.codedocumentconverter.core.doc;
 import indi.lyn.codedocumentconverter.core.reflect.ClassScannerUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.xwpf.usermodel.*;
-import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFonts;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTcPr;
 
@@ -23,7 +22,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Slf4j
-public class Doc {
+public class SqlDoc {
 
     public void handleSimpleDoc(String packageName) throws Exception {
         XWPFDocument document = new XWPFDocument();
@@ -206,6 +205,6 @@ public class Doc {
 
 
     public static void main(String[] args) throws Exception {
-        new Doc().handleSimpleDoc("indi.lyn");
+        new SqlDoc().handleSimpleDoc("indi.lyn");
     }
 }
